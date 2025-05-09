@@ -11,7 +11,7 @@ macOS向けのGitコミットリベースを簡単に行うためのツールで
 リポジトリをクローンして、実行権限を付与します：
 
 ```bash
-git clone https://github.com/yourusername/git-rebase-helper.git
+git clone https://github.com/kakeru-ikeda/git-rebase-helper.git
 cd git-rebase-helper
 chmod +x src/rebase-commits.sh
 ```
