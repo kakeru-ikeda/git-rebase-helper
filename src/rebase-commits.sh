@@ -108,7 +108,7 @@ if [ $? -eq 0 ]; then
     printf "%b結果:%b すべてのコミットが最初のコミットにまとめられました\n" "$BOLD" "$NC"
     
     printf "\n%bリベース後のコミット:%b\n" "$BOLD" "$NC"
-    git log --oneline --color
+    git log --oneline --color --max-count=5
 
     [ $(git rev-list HEAD --count) -gt 5 ] && printf "  %b...%b\n" "$BLUE" "$NC"
     printf "\nコミットメッセージを編集する場合は:\n"
